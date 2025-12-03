@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big & Small UI</title>
+
+    <style>
+        body {
+            background-color: purple;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ========== TEXT SIZE CONTROL ========== */
+        .big-title {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .medium-title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .small-text {
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px; /* medium */
+            font-weight: bold;
+        }
+
+        video, audio {
+            display: block;
+            margin: 15px auto;
+        }
+
+        video {
+            width: 450px;       /* bigger video */
+            height: auto;
+        }
+
+        input, select, textarea, button {
+            margin: 8px auto;
+            display: block;
+            padding: 10px;
+            width: 260px;
+            font-size: 16px;   /* small-medium size */
+            border-radius: 8px;
+            border: none;
+        }
+
+        button {
+            width: 160px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            font-size: 18px;   /* medium */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="big-title">This is a MAIN Tag</h2>
+
+    <article class="small-text">This is article</article>
+    <section class="small-text">This is section</section>
+    <aside class="small-text">This is aside</aside>
+    <footer class="small-text">This is footer</footer>
+
+    <!-- VIDEO -->
+    <h2 class="medium-title">Video</h2>
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <!-- AUDIO -->
+    <h2 class="medium-title">Audio</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- INPUTS -->
+    <h2 class="medium-title">Inputs</h2>
+
+    <label class="small-text">Checkbox:</label>
+    <input type="checkbox">
+
+    <label class="small-text">Pick Color:</label>
+    <input type="color">
+
+    <label class="small-text">Upload File:</label>
+    <input type="file">
+
+    <label class="small-text">Select Date:</label>
+    <input type="date">
+
+    <label class="small-text">Date & Time:</label>
+    <input type="datetime-local">
+
+    <label class="small-text">Password:</label>
+    <input type="password">
+
+    <label class="small-text">Type your URL:</label>
+    <input type="url" placeholder="http://www.example.com">
+
+    <label class="small-text">Select Month:</label>
+    <input type="month">
+
+    <label class="small-text">Text Input:</label>
+    <input type="text" placeholder="Enter text" minlength="2" maxlength="6">
+
+    <label class="small-text">Number:</label>
+    <input type="number" min="10" max="100">
+
+    <!-- FORM -->
+    <h2 class="big-title">Contact Form</h2>
+
+    <form>
+
+        <label class="small-text">Full Name:</label>
+        <input type="text" required>
+
+        <label class="small-text">Email:</label>
+        <input type="email" required>
+
+        <label class="small-text">Password:</label>
+        <input type="password" required>
+
+        <label class="small-text">Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <label class="small-text">Skills:</label>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JavaScript
+
+        <label class="small-text">City:</label>
+        <select>
+            <option>Chennai</option>
+            <option>Coimbatore</option>
+            <option>Madurai</option>
+        </select>
+
+        <label class="small-text">Message:</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
