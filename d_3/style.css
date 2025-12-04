@@ -1,0 +1,41 @@
+#demo{
+    background-color:blue;
+    color:wheat;
+}
+.container{
+    flex-grow: 1;
+    height: 80vh;
+    border:3px solid red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*gap: 20px;*/
+    row-gap: 5px;
+    column-gap: 30px;
+    
+    flex-wrap: wrap;/*wrap wrap-reverse*/
+}
+.box{
+    height: 80px;
+    width: 80px;
+    background-color: blueviolet;
+    color:white;
+    border:2px solid black;
+    font-size: 35px;
+}
+#b5{
+    /*order:2;*/
+    /*flex-grow:1:*/
+}
+#b3{
+   /* order: 2;*/
+   flex: grow 5;
+   /*flex-Shrink:2;*/
+   /*align-self: center;*//*align self will change alignment of a particular element*/
+}
+#b10{
+    /*order: 3;*/
+}
+#b1{
+    /*order: 1;*/
+}
